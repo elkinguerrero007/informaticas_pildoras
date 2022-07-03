@@ -1,0 +1,10 @@
+aside{
+    float:left;
+    width: calc(20% - 20px);
+    background: orange;
+    min-height: 500px;
+    padding-left: 10%px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
