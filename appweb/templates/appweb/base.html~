@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    
+    {% load static %}
+    
   <meta charset="UTF-8">
     <title>CrediRisk</title>
     <link rel="logo" href="images/logo.png", "Credirisk!!!"/>
@@ -54,7 +57,7 @@
                 </ul>
             </div>
             <div class="amenities">
-                <h3>Tipos de creditos</h3>
+                <a href="{% url 'Servicios' %}">Servicios</a>
                 <h4>Vivienda, Vehiculos</h4>
                 <ul class="popover">
                     <li>
@@ -73,100 +76,10 @@
             </div>
             <button>Busque</button>
         </section>
-        <section class="places">
-           <!-- <h1>Places</h1> -->
-            <article>
-                    <h2>
-                        Vivienda
-                    </h2>
-                    <div>
-                       Hasta  $100.000.000
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            Avvillas
-                        </div>
-                        <div class="number_rooms">
-                            Bancolombia
-                        </div>
-                        <div class="number_bathrooms">
-                            Bonco popular
-                        </div>
-                    </div>
-                    <div class="user">
-                        <p><span>Indispensable:</span> mayor de 18 años</p>
-                    </div>
-                    <div class="description">
-		      Aquie es pura carreta..........
-		      ..........................
-		      .............................
-		      ......................
-		      ...............................
-		      ................................
-                    </div>
-                </article>
-                <article>
-                    <h2>
-                        Vehiculo
-                    </h2>
-                    <div>
-                      Hasta 40.000.000 $
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            Avvillas
-                        </div>
-                        <div class="number_rooms">
-                            Bancolombia
-                        </div>
-                        <div clas "number_bathrooms">
-			 Hasta $ Banco Popular
-                        </div>
-			<div>
-                    <div class="user">
-                        <p><span>Indispensable:</span> Mayor de 18 años</p>
-                    </div>
-                    <div class="description">
-		      carreta.................................
-                      :::::::::::::::::::::::::::::::::::::
-		      ..........................................
-		      ..................................
-		      ...................................
-		      .................................
-                    </div>
-                </article>
-                <article>
-                    <h2>
-                       Libre inversion
-                    </h2>
-                    <div>
-                        Hasta $12.000.000
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            Avillas
-                        </div>
-                        <div class="number_rooms">
-                            Bancolombia
-                        </div>
-                        <div class="number_bathrooms">
-                            Banco Popular
-                        </div>
-                    </div>
-                    <div class="user">
-                        <p><span>Indispensable:</span> Mayor de 18 años</p>
-                    </div>
-                    <div class="description">
-		      carreta...................................
-		      ..............................
-		      ........................................
-		      ...................................
-		      ....................
-		      ..........................................
-		      .....................................
-                    </div>
-                </article>
-        </section>
+
+	{% block content %}
+	
+	{% endblock %}
     </div>
     <footer>
         CreditRisk derechos reservados

@@ -1,4 +1,4 @@
-{% extends "appweb/home.html" %}
+{% extends "appweb/base.html" %}
 
 {% load static %}
 
@@ -6,7 +6,7 @@
 
 
 <div><p>
-
+elkin
     
 </p></div>
 

@@ -1,175 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-    <title>CrediRisk</title>
-    <link rel="logo" href="images/logo.png", "Credirisk!!!"/>
-    <link rel="bath" href="images/icon_bath.png.", "Credirisk!!!"/>
-    <link rel="bed" href="images/icon_bed.png", "Credirisk!!!"/>
-    <link rel="group" href="images/icon_group.png", "Credirisk!!!"/>
-    <link rel="icon" href="images/icon.png", "Credirisk!!!"/>
-    <link rel="matrix" href="images/matrix2.png", "Credirisk!!!"/>
-    <link rel="stylesheet" href="static/common.css">
-    <link rel="stylesheet" href="static/footer.css">
-    <link rel="stylesheet" href="static/header.css">
-    <link rel="stylesheet" href="static/filters.css"/>
-    <link rel="stylesheet" href="static/places.css"/>
-</head>
-<body>
-    <header>
-        <div class="logo"></div>
-    </header>
-    <div class="container">
-        <section class="filters">
-            <div class="location">
-                <h3>States</h3>
-                <h4>California, Arizona...</h4>
-                <ul class="popover">
-                    <li>
-                        <h2>
-                            Arizona
-                        </h2>
-                        <ul>
-                            <li>
-                                Phoenix
-                            </li>
-                            <li>
-                                Tucson
-                            </li>
-                        </ul>
+{% extends "appweb/base.html" %}
 
-                    <li>
-                        <h2>
-                            California
-                        </h2>
-                        <ul>
-                            <li>
-                                San Francisco
-                            </li>
-                            <li>
-                                Los Altos
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="amenities">
-                <h3>Amenities</h3>
-                <h4>Internet, Kitchen...</h4>
-                <ul class="popover">
-                    <li>
-                        Internet
-                    </li>
-                    <li>
-                        TV
-                    </li>
-                    <li>
-                        Kitchen
-                    </li>
-                    <li>
-                        Iron
-                    </li>
-                </ul>
-            </div>
-            <button>Search</button>
-        </section>
+{% load static %}
+
+
+{% block content %}
         <section class="places">
-            <h1>Places</h1>
+           <!-- <h1>Places</h1> -->
             <article>
-	      <div class="matrix"></div>
                     <h2>
-                        Home
+                        Vivienda
                     </h2>
-                    <div class="price_by_night">
-                        $80
+                    <div>
+                       Hasta  $100.000.000
                     </div>
                     <div class="information">
                         <div class="max_guest">
-                            2 Guest
+                            Avvillas
                         </div>
                         <div class="number_rooms">
-                            3 Rooms
+                            Bancolombia
                         </div>
                         <div class="number_bathrooms">
-                            2 Bathrooms
+                            Bonco popular
                         </div>
                     </div>
                     <div class="user">
-                        <p><span>Owner:</span> William Wallace</p>
+                        <p><span>Indispensable:</span> mayor de 18 años</p>
                     </div>
                     <div class="description">
-                        2 guests · Studio · 1 bed · 1 private bath
-                        Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.
-                        Great location
-                        90% of recent guests gave the location a 5-star rating.
-                        Great check-in experience
-                        95% of recent guests gave the check-in process a 5-star rating.
+		      Aquie es pura carreta..........
+		      ..........................
+		      .............................
+		      ......................
+		      ...............................
+		      ................................
                     </div>
                 </article>
                 <article>
                     <h2>
-                        Tiny House
+                        Vehiculo
                     </h2>
-                    <div class="price_by_night">
-                        $20
+                    <div>
+                      Hasta $40.000.000 
                     </div>
                     <div class="information">
                         <div class="max_guest">
-                            2 Guest
+                            Avvillas
                         </div>
                         <div class="number_rooms">
-                            3 Rooms
+                            Bancolombia
                         </div>
-                        <div class="number_bathrooms">
-                            2 Bathrooms
+                        <div class "number_bathrooms">
+			 Hasta $ Banco Popular
                         </div>
-                    </div>
+			</div>
                     <div class="user">
-                        <p><span>Owner:</span> William Wallace</p>
+                        <p><span>Indispensable:</span> Mayor de 18 años</p>
                     </div>
                     <div class="description">
-                        2 guests · Studio · 1 bed · 1 private bath
-                        Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.
-                        Great location
-                        90% of recent guests gave the location a 5-star rating.
-                        Great check-in experience
-                        95% of recent guests gave the check-in process a 5-star rating.
+		      carreta.................................
+                      :::::::::::::::::::::::::::::::::::::
+		      ..........................................
+		      ..................................
+		      ...................................
+		      .................................
                     </div>
                 </article>
                 <article>
                     <h2>
-                        A suite
+                       Libre inversion
                     </h2>
-                    <div class="price_by_night">
-                        $10
+                    <div>
+                        Hasta $12.000.000
                     </div>
                     <div class="information">
                         <div class="max_guest">
-                            2 Guest
+                            Avillas
                         </div>
                         <div class="number_rooms">
-                            3 Rooms
+                            Bancolombia
                         </div>
                         <div class="number_bathrooms">
-                            2 Bathrooms
+                            Banco Popular
                         </div>
                     </div>
                     <div class="user">
-                        <p><span>Owner:</span> William Wallace</p>
+                        <p><span>Indispensable:</span> Mayor de 18 años</p>
                     </div>
                     <div class="description">
-                        2 guests · Studio · 1 bed · 1 private bath
-                        Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.
-                        Great location
-                        90% of recent guests gave the location a 5-star rating.
-                        Great check-in experience
-                        95% of recent guests gave the check-in process a 5-star rating.
+		      carreta...................................
+		      ..............................
+		      ........................................
+		      ...................................
+		      ....................
+		      ..........................................
+		      .....................................
                     </div>
                 </article>
         </section>
     </div>
-    <footer>
-        Holberton School
-    </footer>
 </body>
+{% endblock %}
 </html>
