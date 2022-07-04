@@ -1,18 +1,28 @@
-on: push
+name:Build an Deploy
+on: 
+  push:
+    branches:
+      - main
 jobs:
-  test:
-    strategy:
-      matrix:
-        platform: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.platform }}
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - run: npm install-ci-test
-    - uses:
-  publish:
-    needs: [test]
-    steps:
-    - uses: actions/checkout@v3
+   build-and-deploy:
+     runs-on: ubuntu-latest
+     concurrency: ci-${{github.ref}}
+     steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+          
+          name: Configure Node
+          uses: actions/setup-node@v3
+          with:
+            node-version: 16
+          
+          name: install  
+          run:
+            npm install-ci
+            npm run build
+        - name: Deploy
+          uses: elkinguerrero007/github-pages-deploy-action@v4
+          whith: 
+             folder: build
+             branch: gh-pages
+          
