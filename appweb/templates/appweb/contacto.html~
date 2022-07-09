@@ -4,8 +4,10 @@
 
 
 {% block content %}
-        <section class="places">
-           <!-- <h1>Places</h1> -->
+<body/>
+<section class="places">
+  
+  <!-- <h1>Places</h1> -->         <!-- imagen prueba-->
             <article>
                     <h2>
                         Vivienda
@@ -101,4 +103,3 @@
     </div>
 </body>
 {% endblock %}
-</html>
